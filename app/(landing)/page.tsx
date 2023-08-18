@@ -1,0 +1,18 @@
+import React from 'react'
+import Navbar from './components/landing-navbar'
+import LandingHero from './components/landing-hero'
+import LandingContent from './components/landing-content'
+import Footer from './components/footer'
+
+const LandingPage = () => {
+  return (
+    <div className='h-full'>
+     <Navbar/>
+     <LandingHero/>
+     {/* <LandingContent/> */}
+     <Footer/>
+    </div>
+  )
+}
+
+export default LandingPage
