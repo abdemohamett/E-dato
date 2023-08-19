@@ -26,12 +26,7 @@ import { Label } from "@/components/ui/label"
 import { ThemeToggle } from "@/components/theme-toggle"
 
 interface InputProps {
-  label: string;
-  id: string;
-  type?: string;
   required?: boolean;
-  register: UseFormRegister<FieldValues>,
-  errors: FieldErrors
 }
 
 
@@ -45,10 +40,7 @@ type Variant = 'LOGIN' | 'REGISTER';
 type Input = z.infer<typeof formSchema>;
 
 const AuthForm: React.FC<InputProps> = ({
-  label,
   required,
-  errors,
-  type = 'text',
 }) => {
   const [variant, setVariant] = useState<Variant>('LOGIN');
   const router = useRouter()

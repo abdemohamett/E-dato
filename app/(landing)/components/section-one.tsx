@@ -2,6 +2,7 @@ import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
 import { CircleDollarSign, DollarSign, Wallet, Wallet2 } from 'lucide-react'
+import Link from 'next/link'
 import React from 'react'
 import { BsArrowRightShort, BsPeople, BsPeopleFill } from 'react-icons/bs'
 
@@ -60,10 +61,12 @@ const SectionOne = () => {
 
             <h2 className='font-thin mt-4 max-w-lg mx-auto text-[16px] text-gray-400'>Create your own Data Recording dashboard and take over control over your data in real-time with E-dato software.</h2>
              <div className='flex flex-col items-center mt-5'>
+        <Link href={"/create"}>
             <Button variant='premium' className=''>
                 Create Your Account Now
                 <BsArrowRightShort size={24}/>
             </Button>
+            </Link>
              </div>
            </div>
         </div>
