@@ -253,14 +253,6 @@ const AuthForm: React.FC<InputProps> = ({
         </div>
       </div>
       <div className="space-y-2">
-      <Button onClick={() => socialAction('google')} className="w-full" size={'sm'} variant="outline" type="button" disabled={isLoading}>
-        {/* {isLoading ? ( */}
-          {/* <BsGoogle className="mr-2 h-4 w-4 animate-spin" /> */}
-          {/* ) : ( */}
-            {/* )}{" "} */}
-            <BsGoogle disabled={isLoading} className="mr-2 h-4 w-4" />
-        Google
-      </Button>
       <Button onClick={() => socialAction('github')} className="w-full" size='sm' variant="outline" type="button" disabled={isLoading}>
             <BsGithub disabled={isLoading} className="mr-2 h-4 w-4" />
         Github
