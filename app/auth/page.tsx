@@ -34,7 +34,9 @@ const AuthPage = () => {
             Sign in to your account
         </h2>
       </div> */}
+      <>
         <AuthForm/>
+      </>
     </div>
   )
 }

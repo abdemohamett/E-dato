@@ -112,7 +112,7 @@ const AuthForm: React.FC<InputProps> = ({
 
         if (callback?.ok) {
           toast.success('Logged.')
-          router.push('/')
+          router.push('/create')
         }
       })
       .finally(() => setIsLoading(false))
