@@ -32,7 +32,7 @@ const LandingHero = () => {
         Create expenses. customers. debts, 10x faster.
       </div>
       <div>
-        <Link href={user ? "/dashboard" : "/sign-up"}>
+        <Link href={user ? "/create" : "/auth"}>
           <Button variant='premium' className="md:text-lg p-4 md:p-6 rounded-full font-semibold">
             Get Started For Free
           </Button>
@@ -44,7 +44,7 @@ const LandingHero = () => {
         
         {/* Video field */}
       <div className='-mt-8 lg:max-w-5xl md:max-w-full md:mx-auto mx-6 mb-8 py-10'>
-        <video poster={'/edato.gift.mp4'} autoPlay muted loop src={'/edato.gift.mp4'} className="w-full h-full rounded-lg shadow-lg" />
+        <video poster='/edato.gift.mp4' autoPlay muted loop src='/edato.gift.mp4' className="w-full h-full rounded-lg shadow-lg" />
         </div>
 
         {/* Paragraph section */}
